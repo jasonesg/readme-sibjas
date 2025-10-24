@@ -6,7 +6,7 @@
 }
 
 :root {
-    /* Light Mode Colors - HN Style */
+    /* Light Mode Colors - HN Style (Simplified) */
     --primary-color: #0000ff;
     --background-color: #f6f6ef;
     --text-color: #000000;
@@ -21,28 +21,13 @@
     --max-width: 1200px;
 }
 
-/* Dark Mode Colors */
-[data-theme="dark"] {
-    --primary-color: #66d9ef;
-    --background-color: #1a1a1a;
-    --text-color: #f8f8f2;
-    --text-color-light: #999999;
-    --navbar-bg: transparent;
-    --section-bg: #1a1a1a;
-    --hero-bg: #1a1a1a;
-    --hero-text: #f8f8f2;
-    --footer-bg: #1a1a1a;
-    --footer-text: #999999;
-    --shadow: none;
-}
-
 body {
     font-family: Georgia, serif;
     font-size: 13px;
     color: var(--text-color);
     background-color: var(--background-color);
     line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Removed theme transition since dark mode is removed */
 }
 
 /* Container */
@@ -90,29 +75,8 @@ body {
     text-decoration: underline;
 }
 
-/* Theme Toggle Button */
-.theme-toggle {
-    background: none;
-    border: 1px solid var(--text-color);
-    cursor: pointer;
-    font-size: 10pt;
-    padding: 2px 4px;
-    transition: opacity 0.3s ease;
-}
+/* Removed Theme Toggle Button styles */
 
-.theme-toggle:hover {
-    opacity: 0.7;
-}
-
-.sun-icon,
-.moon-icon {
-    display: none;
-}
-
-[data-theme="light"] .sun-icon,
-[data-theme="dark"] .moon-icon {
-    display: block;
-}
 
 /* Hero Section */
 .hero {
@@ -126,7 +90,8 @@ body {
 }
 
 .profile-photo {
-    width: 80%;
+    /* Reduced width by 5% from 80% to 75% */
+    width: 75%;
     max-width: 600px;
     height: auto;
     margin-bottom: 30px;
@@ -136,20 +101,17 @@ body {
 }
 
 .hero-title {
+    /* Changed back to the original larger size */
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: normal;
 }
 
 .hero-subtitle {
-    font-size: 14px;
+    /* Kept at 13px as requested in the previous step */
+    font-size: 13px;
     margin-bottom: 20px;
     color: var(--text-color-light);
-}
-
-.hero-subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
     opacity: 0.9;
 }
 
@@ -172,6 +134,7 @@ body {
 }
 
 .section h2 {
+    /* H2 remains 18px */
     font-size: 18px;
     margin-bottom: 20px;
     text-align: center;
@@ -213,19 +176,23 @@ body {
     .nav-links {
         gap: 10px;
         font-size: 10pt;
+    }
     .nav-links a {
         font-size: 10pt;
     }
     
     .hero-title {
+        /* Changed back to 18px for mobile */
         font-size: 18px;
     }
     
     .hero-subtitle {
+        /* Kept at 13px for mobile */
         font-size: 13px;
     }
     
     .profile-photo {
+        /* Still 90% on mobile */
         width: 90%;
     }
     
@@ -236,5 +203,4 @@ body {
     .section h2 {
         font-size: 16px;
     }
-}
 }
