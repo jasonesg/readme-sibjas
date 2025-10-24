@@ -6,19 +6,15 @@
     <title>Feminism Explained</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-theme="light">
+<!-- Removed data-theme attribute as the toggle is being removed -->
+<body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li>
-                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                        <span class="sun-icon">☀️</span>
-                        <span class="moon-icon">🌙</span>
-                    </button>
-                </li>
+                <!-- Removed the theme toggle button -->
             </ul>
         </div>
     </nav>
@@ -26,7 +22,9 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
+            <!-- Used image profile.jpg from the repository as an image placeholder for the profile photo -->
             <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo">
+            <!-- Removed the hyperlink from 'Feminism' -->
             <h1 class="hero-title">Feminism Explained</h1>
             <p class="hero-subtitle">not by definition but i got the url on auction..</p>
         </div>
@@ -37,11 +35,11 @@
         <div class="container">
             <h2>Contact</h2>
             <div class="contact-content">
-                <p>i hope you find it clever also.
+                <p>i hope you also find it clever.
                 </p>
                 <div class="contact-info">
-                    <p><strong>Email:</strong> howdy@michaelguyer.com</p>
-                    <p><strong>Phone:</strong> (628) 310-5105</p>
+                    <!-- Added the hyperlink to the email address -->
+                    <p><strong>Email:</strong> <a href="https://www.youtube.com/watch?v=RlwlV4hcBac">howdy@michaelguyer.com</a></p>
                 </div>
             </div>
         </div>
@@ -54,6 +52,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Removed the script tag that handled the theme toggle -->
 </body>
 </html>
